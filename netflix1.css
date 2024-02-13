@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.netflix-logo{
+    height:50px;
+    width:70px;
+}
+
+.netflix-bg-container{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png");
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 10px;
+    margin:5px 0px;
+}
+
+nav button{
+    border:0;
+    outline:5;
+    background:#db0001;
+    color:#fff;
+    padding:7px 20px;
+    font-size:12px;
+    border-radius:6px;
+    margin-left:10px;
+    cursor:pointer;
+}
+.netflix-heading{
+    color:#ffffff;
+    font-size:42px;
+    text-align:center;
+    font-family:"Roboto";
+    font-weight:900;
+    margin:30px
+}
+
+.netflix-paragraph{
+    color:#ffffff;
+    font-size:20px;
+    font-family:"Roboto";
+    text-align:center;
+    font-weight:400;
+}
+.netflix-paragraph1{
+    color:#ffffff;
+    font-size:18px;
+    font-family:"Roboto";
+    text-align:center;
+    font-weight:400;
+}
+.user-input{
+    width:20vw;
+    height:5vh;
+    text-align:center
+}
+
+.email-signup{
+    background-color:#fff;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.email-signup input{
+    flex:1;
+    border:0;
+    outline:0;
+    margin-left:20px;
+}
+.email-signup button{
+    background-color:#db0001;
+    border:0;
+    outline:0;color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    padding:7px 40px;
+}
+
+.movies-container{
+    background-color: black;
+    background-size:cover;
+    height:45vh;
+}
+.movies-image{
+    height:32vh;
+    width:28vw;
+    border-width:2px;
+}
+
+.movies-heading{
+    color:#fff;
+    font-size:40px;
+    font-family:"Roboto";
+    margin:10px;
+    padding:2px;
+}
+.movies-paragraph{
+    color:#fff;
+    font-size:20px;
+    font-family:"Roboto";
+    padding:2px;
+}
+.movie-container{
+    background-color: black;
+    background-size:cover;
+    height:50vh;
+}
+
+.hline{
+    background-color:grey;
+    height:1vh;
+    background-size:cover;
+}
+.movie1-container{
+    background-color: black;
+    background-size:cover;
+    height:55vh;
+}
+
+
+/*------------faq-----------*/
+.faq{
+    padding:10px 12%;
+    text-align:center;
+    font-size:18px;
+    background-color:black;
+    height:120vh;
+}
+
+.faq-heading{
+    font-size:26px;
+    font-family:"Roboto";
+    color:#fff;
+}
+
+.accordian{
+    margin:60px auto;
+    width:100%;
+    max-width:750px;
+}
+.accordian li{
+    list-style:none;
+    width:100%;
+    padding:5px;
+}
+.accordian li label{
+    display:flex;
+    align-items:center;
+    padding:8px;
+    color:#fff;
+    font-size:18px;
+    background:#303030;
+    margin-bottom:2px;
+    cursor:pointer;
+    position:relative;
+}
+label::after{
+    content:'+';
+    font-size:34px;
+    position:absolute;
+    right:20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display:none;
+}
+.accordian .content{
+    background:#303030;
+    text-align:left;
+    padding:0 20px;
+    color:#fff;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.5s ,padding 0.5s;
+}
+
+.accordian input[type = "radio"]:checked + label + .content{
+    max-height:600px;
+    padding:15px 10px;
+}
+.accordian input[type = "radio"]:checked + label::after{
+    transform:rotate(135deg);
+
+}
+
+.footer{
+    background-color: black;
+    height:40vh;
+}
+.footer-section{
+    color:white;
+    font-size:32px;
+    font-family:"Roboto";
+    text-align:center;
+}
+
+.footer-head{
+    color:grey;
+}
